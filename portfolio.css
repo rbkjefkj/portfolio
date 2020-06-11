@@ -1,0 +1,122 @@
+body { margin: 0; }
+
+header {
+	height: 150px;
+	border-bottom: pink 6px ridge;
+	padding-bottom: 25px;
+	background:
+	repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
+	  rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
+	  rgba(0, 255, 0, 0.5) 160px, rgba(0, 0, 255, 0.5) 200px,
+	  rgba(75, 0, 130, 0.5) 240px, rgba(238, 130, 238, 0.5) 280px,
+	  rgba(255, 0, 0, 0.5) 300px),
+	repeating-linear-gradient(-190deg, rgba(255, 0, 0, 0.5) 30px,
+	  rgba(255, 153, 0, 0.5) 60px, rgba(255, 255, 0, 0.5) 90px,
+	  rgba(0, 255, 0, 0.5) 120px, rgba(0, 0, 255, 0.5) 150px,
+	  rgba(75, 0, 130, 0.5) 180px, rgba(238, 130, 238, 0.5) 210px,
+	  rgba(255, 0, 0, 0.5) 230px),
+	repeating-linear-gradient(23deg, red 50px, orange 100px,
+	  yellow 150px, green 200px, blue 250px,
+	  indigo 300px, violet 350px, red 370px);
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+	padding-top: 45px;
+	font-size: 65px;
+	font-family: "Archivo", sans-serif;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	background-color: hsl(180, 100%, 99%);
+	background-image: url("./glamorous.svg");
+
+}
+
+p {
+	font-family: arial;
+}
+
+/*
+FUN FONTS ON 1001fonts.com
+Dale Harris
+Bradley gratis
+Shallow Grave BB + 1
+animals are like people
+distro + 10
+FLICKER DEMO
+tomorrow comes today
+knee to the face
+
+*/
+
+.single-project {
+	padding-left: 20px;
+	width: 40%;
+	border-right: ridge 5px pink;
+	border-left: ridge 5px pink;
+	padding-right: 40px;
+	display: flex;
+	margin: 0 auto 0 auto;
+	padding-bottom: 70px;
+	background-color: white;
+	min-height: 150px;
+}
+
+#first-project {
+	margin-top: 50px;
+    padding-top: 45px;
+    border-radius: 10px 10px 0 0;
+    border-top: 5px ridge pink;
+}
+
+#last-project {
+	margin-bottom: 80px;
+    border-radius: 0 0 10px 10px;
+    border-bottom: 5px ridge pink;
+}
+
+#blog-img { padding-top: 5px; }
+
+.live-code {
+	display: flex;
+	flex-direction: column;
+}
+
+img { width: 200px; }
+
+h2 {
+	margin: 0;
+	font-family: 'Amatic SC', cursive;
+	font-weight: normal;
+	font-size: xxx-large;
+}
+
+.description {
+	position: relative;
+	margin-left: 12px;
+	min-height: 150px;
+}
+
+a {
+	cursor: pointer;
+	position: absolute;
+    font-family: arial;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+	font-size: small;
+}
+
+#live {
+	bottom: 2px;
+	left: 0;
+}
+
+#code {
+	bottom: 2px;
+	left: 50px;
+}
