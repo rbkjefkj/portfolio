@@ -9,11 +9,11 @@
 	        <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 	<header>
-		<h1 class="logo-1">vove@inbox.lv</h1>
+		<h1 class="logo-1">contact me: vnsa@inbox.lv</h1>
 	</header>
-	<main>
+	<main id="main">
 	<div class="single-project" id="first-project">
 		<div class="live-code">
 			<img src="./cw.png">
@@ -65,5 +65,22 @@
 		<p id="skills"><span>My current skills:</span><br> HTML, CSS, JS, Bootstrap,<br>React, NodeJS, SQL, MongoDB</p>
 	</div>
 </main>
+<script>
+let bg = document.getElementById('body');
+let main = document.getElementById('main');
+
+window.onresize = function(event) {
+    getRightSVG(event);
+};
+
+window.onload = function(event) {
+  getRightSVG(event);
+};
+
+function getRightSVG(event) {
+    let w = window.innerWidth;
+    if (w > 450) bg.style.backgroundImage = 'url("glamorous.svg")';
+}
+</script>
 </body>
 </html>
