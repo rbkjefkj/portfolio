@@ -206,7 +206,6 @@ br { display: none; }
 	a { color: aquamarine; }
 
 	body {
-		background-image: url("./glamorous.svg");
 		background-color: maroon;
 		min-height: 100vh;
 	}
@@ -232,7 +231,6 @@ br { display: none; }
 
 	main {
 		width: 90vw;
-		background-image: none;
 		background-color: rgb(220,20,60, 50%); /*define color here for all main content bg*/
 		margin: 0 auto 15px auto;
 		border-radius: 10px;

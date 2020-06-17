@@ -75,12 +75,17 @@ window.onresize = function(event) {
 
 window.onload = function(event) {
   getRightSVG(event);
-  console.log('loaded page!');
 };
 
 function getRightSVG(event) {
     let w = window.innerWidth;
-    if (w < 450) { bg.style.backgroundImage = 'url("glamorous.svg")';  console.log('changed to red!'); }
+    if (w < 450) {
+		bg.style.backgroundImage = 'url("./glamorous.svg")';
+		main.style.backgroundImage = 'none';
+	} else {
+		bg.style.backgroundImage = 'none';
+		main.style.backgroundImage = 'url("./diemond.svg")';
+	}
 }
 </script>
 </body>
