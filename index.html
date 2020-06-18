@@ -11,12 +11,12 @@
 </head>
 <body id="body">
 	<header>
-		<h1 class="logo-1">vnsa@inbox.lv</h1>
+		<h1 id="h1" class="logo-1">emayl@inbox.lv</h1>
 	</header>
 	<main id="main">
-	<div class="single-project" id="first-project">
+	<section class="single-project" id="first-project">
 		<div class="live-code">
-			<img src="./cw.png">
+			<img src="./cw.png" alt="crypto widget">
 		</div>
 		<div class="description">
 			<h2>Crypto widget</h2>
@@ -24,11 +24,11 @@
 			<a class="live" href="https://rbkjefkj.github.io/cryptoWidget" target="_blank">LIVE</a>
 			<a class="code" href="https://github.com/rbkjefkj/cryptoWidget" target="_blank">CODE</a>
 		</div>
-	</div>
+	</section>
 
-	<div class="single-project">
+	<section class="single-project">
 		<div class="live-code">
-			<img src="./blog.png" id="blog-img">
+			<img src="./blog.png" id="blog-img" alt="blog">
 		</div>
 		<div class="description">
 			<h2>Blog</h2>
@@ -36,11 +36,11 @@
 			<a class="live" href="https://quiet-beyond-59149.herokuapp.com/front/public/publiclist.html" target="_blank">LIVE</a>
 			<a class="code" href="https://github.com/rbkjefkj/blog" target="_blank">CODE</a>
 		</div>
-	</div>
+	</section>
 
-	<div class="single-project">
+	<section class="single-project">
 		<div class="live-code">
-			<img src="./russian.png" id="rus-img">
+			<img src="./russian.png" id="rus-img" alt="Russian course landing page">
 		</div>
 		<div class="description">
 			<h2>Course landing page</h2>
@@ -48,33 +48,36 @@
 			<a class="live" href="https://rbkjefkj.github.io/russian/" target="_blank">LIVE</a>
 			<a class="code" href="https://github.com/rbkjefkj/russian" target="_blank">CODE</a>
 		</div>
-	</div>
+	</section>
 
-	<div class="single-project" id="last-project">
+	<section class="single-project" id="last-project">
 		<div id="container">
 			<div class="live-code">
-				<img src="./portrait.jpg">
+				<img src="./portrait.jpg" alt="portrait of Grimes">
 			</div>
 			<div class="description">
-				<h2>My art portfolio</h2>
+				<h2>Art portfolio</h2>
 				<p>A simple website showcasing my best artworks.</p>
 				<a class="live" href="https://starving4rtist.github.io/4rt/" target="_blank">LIVE</a>
 				<a class="code" href="https://github.com/starving4rtist/4rt" target="_blank">CODE</a>
 			</div>
 		</div>
-		<p id="skills"><span>My current skills:</span><br> HTML, CSS, JS, Bootstrap,<br>React, NodeJS, SQL, MongoDB</p>
-	</div>
+		<p id="skills"><bdi>My current skills:</bdi><br id="br"> HTML, CSS, JavaScript, Bootstrap, <br>React, NodeJS, SQL, MongoDB</p>
+	</section>
 </main>
 <script>
 let bg = document.getElementById('body');
 let main = document.getElementById('main');
+let h1 = document.getElementById('h1');
 
 window.onresize = function(event) {
     getRightSVG(event);
+	//makeHeadline(event);
 };
 
 window.onload = function(event) {
   getRightSVG(event);
+  //makeHeadline(event);
 };
 
 function getRightSVG(event) {
@@ -86,6 +89,11 @@ function getRightSVG(event) {
 		bg.style.backgroundImage = 'none';
 		main.style.backgroundImage = 'url("./diemond.svg")';
 	}
+}
+
+function makeHeadline(event) {
+	let w = window.innerWidth;
+    w > 1200 ? h1.textContent = 'contact me: katrina@inbox.lv' : h1.textContent = 'katrina@inbox.lv';
 }
 </script>
 </body>

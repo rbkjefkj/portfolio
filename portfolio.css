@@ -2,9 +2,9 @@ html { overflow-x: hidden; } /*for the elusive mobile horizontal scrollbar*/
 body { margin: 0; }
 
 header {
-	height: 150px;
+	/*height: 150px;*/
 	border-bottom: gold 6px ridge;
-	padding-bottom: 25px;
+	/*padding-bottom: 25px;*/
 	background:
 	repeating-linear-gradient(190deg, rgba(255, 0, 0, 0.5) 40px,
 	  rgba(255, 153, 0, 0.5) 80px, rgba(255, 255, 0, 0.5) 120px,
@@ -24,8 +24,9 @@ header {
 h1 {
 	text-align: center;
 	margin: 0;
-	padding-top: 45px;
-	font-size: 65px;
+	padding-top: 3.5vw;
+	padding-bottom: 4vw;
+	font-size: 85px;
 	font-family: "Archivo", sans-serif;
 	white-space: nowrap;
 }
@@ -71,7 +72,7 @@ knee to the face
 }
 
 #first-project {
-	margin-top: 60px;
+	margin-top: 70px;
     padding-top: 45px;
     border-radius: 10px 10px 0 0;
     border-top: 5px ridge gold;
@@ -128,10 +129,22 @@ a {
 
 #skills {
 	color: dodgerblue;
-	margin: 50px 18px 18px auto;
+	margin: 50px 18px 22px 10px;
+	font-size: 15px;
+}
+
+bdi {
+	font-weight: bold;
+	font-size: 30px;
+	font-family: 'Amatic SC';
 }
 
 br { display: none; }
+#br { display: block; }
+
+@media(min-width: 1450px) {
+	h1 { padding: 50px 0 57px 0; }
+}
 
 @media(max-width: 1250px) {
 	.single-project {
@@ -146,6 +159,7 @@ br { display: none; }
 }
 
 @media(max-width: 600px) { img { display: none; } h2 { font-size: xx-large; } }
+@media(max-width: 680px) { h1 { font-size: 12.5vw; } }
 
 /*mobile styles roughly*/
 @media (max-width: 450px) {
@@ -160,11 +174,10 @@ br { display: none; }
 		background-image: none;
 		background-color: rgb(255, 0, 0, 80%);
 		border-bottom: none;
-		height: 80px;
     	display: flex;
     	align-items: center;
     	justify-content: center;
-		padding: 0;
+		padding: 3vw 0 4vw 0;
 	}
 
 	html {
@@ -254,8 +267,8 @@ br { display: none; }
 	}
 
 	br { display: block; }
-	span {
-		font-weight: bold;
+
+	bdi {
 		font-size: 27px;
 		font-family: 'Amatic SC';
 	}
